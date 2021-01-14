@@ -1,0 +1,7 @@
+<h1>User info</h1>
+
+
+
+<% if @user.id == current_user.id %>
+  <p><%= link_to "プロフ編集", edit_user_path(@user) %></p>
+<% end %>

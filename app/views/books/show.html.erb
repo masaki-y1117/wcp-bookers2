@@ -1,1 +1,10 @@
 <h1>Book detail</h1>
+<table>
+  <tr>
+    <td></td>
+    <td><%= @book.title %></td>
+    <td><%= @book.body%></td>
+    <td><%= link_to "Edit", edit_book_path(@book) %></td>
+    <td><%= link_to "Destroy", books_path %></td>
+  </tr>
+</table>
