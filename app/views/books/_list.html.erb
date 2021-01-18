@@ -5,17 +5,17 @@
   <tbody>
     <tr>
       <th>name</th>
-      <th>test</th>
+      <th><%= user.name %></th>
     </tr>
     <tr>
       <th>introduction</th>
-      <th></th>
+      <th><%= user.introduction %></th>
     </tr>
   </tbody>
 </table>
 
 <% if user == current_user %>
-  <p><%= link_to "プロフ編集", edit_user_path(user) %></p>
+  <p class="button"><%= link_to "編集", edit_user_path(user) %></p>
 <% end %>
 
 <h1>New book</h1>

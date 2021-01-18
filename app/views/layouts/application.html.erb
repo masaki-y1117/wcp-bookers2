@@ -37,6 +37,8 @@
         <%= link_to "login", new_user_session_path %>
       </li>
     <% end %>
+    <div class="notice"><%= notice %></div>
+    <div class="alert"><%= alert %></div>
     <%= yield %>
   </body>
 </html>
