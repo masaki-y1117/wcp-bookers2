@@ -1,9 +1,9 @@
 <% if @book.errors.any? %>
   <h2>
-    <%= pluralize(@book.errors.count, "error") %> prohibited this obj from being saved:
+    <span class="text-danger"><%= pluralize(@book.errors.count, "error") %> prohibited this obj from being saved:</span>
   </h2>
   <% @book.errors.full_messages.each do |message| %>
-    <p><%= message %></p>
+    <p class="text-danger"><%= message %></p>
   <% end %>
 <% end %>
 
@@ -39,3 +39,13 @@
     </div>
   </div>
 </div>
+
+<footer>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="mx-auto">
+        <p>CopyRight Infratop.inc</p>
+      </div>
+    </div>
+  </div>
+</footer>
